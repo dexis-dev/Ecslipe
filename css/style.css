@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Jura:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Jura:wght@300..700&display=swap');
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #091117;
+}
+
+
+.abstraction_center {
+    background-image: url(/img/abstraction.svg);
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.authorization_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    position: relative;
+    z-index: 9999;
+}
+
+.authorization_contaier {
+    max-width: 100%;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.authorization_box {
+    width: 500px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 25px;
+    background: linear-gradient(to bottom, #0b141bb4, #131e26b9);
+}
+
+.logo_name{
+    font-size: 36px;
+    color: #fff;
+    font-family: Jura;
+    
+}
+
+.authorization_title {
+    color: #9D9D9D;
+    font-size: 24px;
+    font-family: Jura;   
+}
+
+.authorization_input {
+    position: relative;
+    width: 100%;
+    margin-top: 40px;
+}
+
+
+
+
+
+.authorization_input {
+    position: relative;
+    overflow: hidden;
+}
+
+.authorization_input input {
+    width: 100%;
+    height: 60px;
+    background-color: inherit;
+    border: 1px solid #9E9E9E;
+    color: #fff;
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    box-sizing: border-box;
+    outline: none;
+    padding-left: 22px;
+    border-radius: 20px;
+    transition: border 0.3s ease, color 0.3s ease;
+    background: inherit;
+}
+
+.authorization_input input:hover {
+    border: 1px solid #ffffff;
+}
+
+.authorization_input input:focus {
+    border: 1px solid #fff;
+}
+
+.authorization_input svg {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    fill: #fff;
+}
+
+
+.authorization_button button {
+    width: 100%;
+    margin-top: 40px;
+    height: 60px;
+    border-radius: 20px;
+    background-color: inherit;
+    border: 1px solid #9E9E9E;
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-family: inter;
+    color: #9E9E9E;
+    cursor: pointer;
+    transition: border 0.3s ease , color 0.3s ease , background-color 0.3s ease;
+}
+
+
+.authorization_button button:hover {
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.authorization_button button:focus {
+    background-color: #fff;
+    color: #091117;
+}
+
+
+.create_link {
+    color: #fff;
+    font-family: inter;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+.authorization_text {
+    color: #9D9D9D;
+    line-height: 30px;
+    font-family: Jura;
+    font-size: 19px;
+    text-align: start;
+}
+
+.authorization_text_1 {
+    color: #ffffff;
+    line-height: 30px;
+    font-family: Jura;
+    font-size: 19px;
+    text-align: start;
+}
+
+
+@media (max-width: 550px) {
+    .authorization_contaier {
+        max-width: 100%;
+        padding: 0px;
+    }
+    .authorization_box {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 25px;
+        padding-right: 25px;
+        border-radius: 0px;
+    }
+}
+
+ 
