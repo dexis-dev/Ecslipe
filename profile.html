@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecslipe</title>
+</head>
+<body>
+    
+    <section class="section_container">
+        <div class="menu_right">
+            <!-- LOGO -->   
+            <span class="menu_logo">ECSLIPE</span>
+            <div class="menu_center">
+                <svg width="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="#fff" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/>
+                </svg>
+            </div>
+            <!---->
+            <!-- LINK -->
+            <div class="menu_link_content">
+                <p class="menu_link_title" id="toggleButton">
+                    <svg width="6" height="5" viewBox="0 0 6 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 8.59151e-08L6 5H-3.9834e-06L3 8.59151e-08Z" fill="white"/>
+                    </svg>                        
+                    Off...
+                </p>
+                <div class="buttons-container" id="buttonsContainer">
+                    <button class="menu_button menu_button_col">
+                        Statistics
+                    </button>
+                    <button class="menu_button" >
+                        Offer 1
+                    </button>
+                    <button class="menu_button">
+                        Offer 2
+                    </button>
+                </div>
+                <div class="menu_img planet">
+                    <img src="img/planet.svg" alt="">
+                </div>
+                
+                <div class="menu_img planet-big">
+                    <img src="img/planet-big.svg" alt="">
+                </div>                
+                <div style="display: flex; justify-content: center;">
+                    <div class="menu_designer">
+                        <img src="img/designer.svg" alt="">
+                        <p class="menu_designer_text">
+                            Design: manulopirog
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.4431 0.0814456C8.4431 0.0814456 9.29695 -0.317888 9.22579 0.651923C9.20207 1.05126 8.98862 2.44893 8.82259 3.9607L8.25336 8.43895C8.25336 8.43895 8.20594 9.09499 7.77901 9.2091C7.35207 9.32318 6.71171 8.80977 6.5931 8.69566C6.49823 8.6101 4.81428 7.32651 4.22132 6.69899C4.05529 6.52785 3.86555 6.18555 4.24503 5.78622L6.73542 2.93385C7.02004 2.59155 7.30465 1.79289 6.11875 2.7627L2.79825 5.47247C2.79825 5.47247 2.41877 5.7577 1.70724 5.50099L0.165573 4.93051C0.165573 4.93051 -0.403657 4.50266 0.568777 4.07478C2.94057 2.73415 5.85787 1.36501 8.4431 0.0814456Z" fill="white"/>
+                            </svg>                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!---->
+        </div>
+        <div class="menu_box">
+            <div class="right_menu_container">
+                <div class="right_menu_box right_menu_inside">
+                    <div class="right_menu_wrapper">
+                        <div class="right_menu">
+                            <button class="right_button right_button_col">
+                                PROFILE SETTINGS
+                            </button>
+                            <button class="right_button">
+                                SETTINGS 1
+                            </button>
+                            <button class="right_button">
+                                SETTINGS 2
+                            </button>
+                        </div>
+                    </div>
+                    <div class="right_menu_wrapper">
+                        <div class="right_menu">
+                            <button class="right_button right_button_col">
+                                PERSONAL
+                            </button>
+                            <button class="right_button">
+                                PRIVATE
+                            </button>
+                            <button class="right_button">
+                                SAFETY
+                            </button>
+                            <button class="right_button">
+                                SECRET PHRASE
+                            </button>
+                            <button class="right_button">
+                                CONTACT
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="right_menu_box">
+                    <div class="left_profile">
+                        <a href="#" id="openModal">
+                            <img src="img/profile.svg" alt="">
+                        </a>
+                    </div>                    
+                </div>
+            </div>
+            <div class="profile_container">
+                <p class="profile_title">
+                    PROFILE
+                </p>
+                <p class="profile_paragraph">
+                    NAME
+                </p>
+                <input class="profile_input" type="text" name="" id="" placeholder="FRE4KY">
+                <p class="profile_paragraph">
+                    NICKNAME
+                </p>
+                <input class="profile_input" type="text" name="" id="" placeholder="FRE4KY_NICK">
+            </div>
+        </div>
+    </section>
+    <br><br>
+    <div style="margin-bottom: 200px;"></div>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        const scrollContainers = document.querySelectorAll(".right_menu_wrapper");
+
+        scrollContainers.forEach(scrollContainer => {
+            let isDown = false;
+            let startX;
+            let scrollLeft;
+
+            scrollContainer.addEventListener("mousedown", (e) => {
+                isDown = true;
+                startX = e.pageX - scrollContainer.offsetLeft;
+                scrollLeft = scrollContainer.scrollLeft;
+                scrollContainer.style.cursor = "grabbing";
+            });
+
+            scrollContainer.addEventListener("mouseleave", () => {
+                isDown = false;
+                scrollContainer.style.cursor = "grab";
+            });
+
+            scrollContainer.addEventListener("mouseup", () => {
+                isDown = false;
+                scrollContainer.style.cursor = "grab";
+            });
+
+            scrollContainer.addEventListener("mousemove", (e) => {
+                if (!isDown) return;
+                e.preventDefault();
+                const x = e.pageX - scrollContainer.offsetLeft;
+                const walk = (x - startX) * 2;
+                scrollContainer.scrollLeft = scrollLeft - walk;
+            });
+
+            let touchStartX = 0;
+            let touchScrollLeft = 0;
+
+            scrollContainer.addEventListener("touchstart", (e) => {
+                touchStartX = e.touches[0].clientX;
+                touchScrollLeft = scrollContainer.scrollLeft;
+            });
+
+            scrollContainer.addEventListener("touchmove", (e) => {
+                const touchX = e.touches[0].clientX;
+                const moveX = touchX - touchStartX;
+                scrollContainer.scrollLeft = touchScrollLeft - moveX;
+            });
+        });
+    });
+
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>

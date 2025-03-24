@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecslipe</title>
+</head>
+<body>
+    
+    <section class="section_container">
+        <div class="menu_right">
+            <!-- LOGO -->   
+            <span class="menu_logo">ECSLIPE</span>
+            <div class="menu_center">
+                <svg width="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="#fff" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/>
+                </svg>
+            </div>
+            <!---->
+            <!-- LINK -->
+            <div class="menu_link_content">
+                <p class="menu_link_title" id="toggleButton">
+                    <svg width="6" height="5" viewBox="0 0 6 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 8.59151e-08L6 5H-3.9834e-06L3 8.59151e-08Z" fill="white"/>
+                    </svg>                        
+                    Off...
+                </p>
+                <div class="buttons-container" id="buttonsContainer">
+                    <button class="menu_button menu_button_col">
+                        Statistics
+                    </button>
+                    <button class="menu_button" >
+                        Offer 1
+                    </button>
+                    <button class="menu_button">
+                        Offer 2
+                    </button>
+                </div>
+                <div class="menu_img planet">
+                    <img src="img/planet.svg" alt="">
+                </div>
+                
+                <div class="menu_img planet-big">
+                    <img src="img/planet-big.svg" alt="">
+                </div>                
+                <div style="display: flex; justify-content: center;">
+                    <div class="menu_designer">
+                        <img src="img/designer.svg" alt="">
+                        <p class="menu_designer_text">
+                            Design: manulopirog
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.4431 0.0814456C8.4431 0.0814456 9.29695 -0.317888 9.22579 0.651923C9.20207 1.05126 8.98862 2.44893 8.82259 3.9607L8.25336 8.43895C8.25336 8.43895 8.20594 9.09499 7.77901 9.2091C7.35207 9.32318 6.71171 8.80977 6.5931 8.69566C6.49823 8.6101 4.81428 7.32651 4.22132 6.69899C4.05529 6.52785 3.86555 6.18555 4.24503 5.78622L6.73542 2.93385C7.02004 2.59155 7.30465 1.79289 6.11875 2.7627L2.79825 5.47247C2.79825 5.47247 2.41877 5.7577 1.70724 5.50099L0.165573 4.93051C0.165573 4.93051 -0.403657 4.50266 0.568777 4.07478C2.94057 2.73415 5.85787 1.36501 8.4431 0.0814456Z" fill="white"/>
+                            </svg>                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!---->
+        </div>
+        <div class="menu_box">
+            <div class="right_menu_container">
+                <div class="right_menu_box right_menu_inside">
+                    <div class="right_menu_wrapper">
+                        <div class="right_menu">
+                            <button class="right_button  ">OFFER SETTINGS</button>
+                            <button class="right_button" >CLOAK SETTINGS</button>
+                            <button class="right_button right_button_col">ACTIONS</button>
+                            <button class="right_button">STATICTS</button> 
+                        </div>
+                    </div>
+                </div>
+                <div class="right_menu_box">
+                    <div class="left_profile">
+                        <a href="#" id="openModal">
+                            <img src="img/profile.svg" alt="">
+                        </a>
+                    </div>                    
+                </div>
+            </div>
+            <p class="actions_title">
+                ACTIONS
+            </p>
+            <div class="setting_mobile">
+                <div class="setting_container  ">
+                    <div class="setting_box ">
+                        <p class="setting_inside_title">
+                            Name
+                        </p>
+                        <input class="action_button" type="text" name="#" id="#" placeholder="CLOAK">
+                    </div>
+                    <div class="setting_box setting_mobile_box ">
+                        <p class="setting_inside_title">
+                            PATH                    
+                        </p>
+                        <input class="action_button action_button _1" type="text" name="#" id="#" placeholder="/">
+                    </div>
+                    <div class="setting_box setting_mobile_box">
+                        <p style="text-align: center;margin-left: -20px;" class="setting_inside_title">
+                            TYPE
+                        </p>
+                        <input class="action_button action_button_2" type="text" name="#" id="#" placeholder="PASS_CLOAK">
+                    </div>
+                    <div class="setting_box setting_mobile_box">
+                        <p style="margin-left: -10px;" class="setting_inside_title">
+                            ACTIONS                    
+                        </p>
+                        <svg width="43" height="42" viewBox="0 0 43 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.6671 5.44444H8.28934C5.73798 5.44444 4.46136 5.44444 3.48688 5.92887C2.62968 6.35496 1.93327 7.03438 1.49653 7.87067C1 8.82138 1 10.0669 1 12.556V33.8893C1 36.3784 1 37.6224 1.49653 38.5731C1.93327 39.4093 2.62968 40.09 3.48688 40.516C4.4604 41 5.73548 41 8.28185 41H30.1626C32.7089 41 33.9822 41 34.9557 40.516C35.8129 40.09 36.5117 39.4087 36.9483 38.5724C37.4444 37.6227 37.4444 36.38 37.4444 33.8958V27.6667M28.3333 7.66667L14.6667 21V27.6667H21.5L35.1667 14.3333M28.3333 7.66667L35.1667 1L42 7.66667L35.1667 14.3333M28.3333 7.66667L35.1667 14.3333" stroke="white" stroke-opacity="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <svg width="43" height="42" viewBox="0 0 43 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 7.66667H42M31.75 7.66667L31.0566 5.86238C30.3844 4.11389 30.0482 3.23964 29.425 2.59329C28.8746 2.02251 28.1679 1.58071 27.3694 1.3084C26.4651 1 25.4027 1 23.2773 1H19.7227C17.5973 1 16.5349 1 15.6306 1.3084C14.8322 1.58071 14.1253 2.02251 13.5749 2.59329C12.9516 3.23964 12.6156 4.11389 11.9435 5.86238L11.25 7.66667M36.875 7.66667V30.3333C36.875 34.0671 36.875 35.9338 36.0371 37.36C35.3001 38.6144 34.1242 39.6342 32.6776 40.2733C31.033 41 28.8805 41 24.575 41H18.425C14.1196 41 11.9669 41 10.3225 40.2733C8.87595 39.6342 7.69991 38.6144 6.96289 37.36C6.125 35.9338 6.125 34.0671 6.125 30.3333V7.66667M26.625 16.5556V32.1111M16.375 16.5556V32.1111" stroke="white" stroke-opacity="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                                
+                    </div>
+                </div><br>
+                <div class="setting_container">
+                    <div class="setting_box ">
+     
+                        <input class="action_button" type="text" name="#" id="#" placeholder="CLOAK">
+                    </div>
+                    <div class="setting_box setting_mobile_box">
+                        
+                        <input class="action_button action_button _1" type="text" name="#" id="#" placeholder="/">
+                    </div>
+                    <div class="setting_box setting_mobile_box">
+                        
+                        <input class="action_button action_button_2" type="text" name="#" id="#" placeholder="PASS_CLOAK">
+                    </div>
+                    <div class="setting_box setting_mobile_box flex_mobile">
+                        <svg width="43" height="42" viewBox="0 0 43 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.6671 5.44444H8.28934C5.73798 5.44444 4.46136 5.44444 3.48688 5.92887C2.62968 6.35496 1.93327 7.03438 1.49653 7.87067C1 8.82138 1 10.0669 1 12.556V33.8893C1 36.3784 1 37.6224 1.49653 38.5731C1.93327 39.4093 2.62968 40.09 3.48688 40.516C4.4604 41 5.73548 41 8.28185 41H30.1626C32.7089 41 33.9822 41 34.9557 40.516C35.8129 40.09 36.5117 39.4087 36.9483 38.5724C37.4444 37.6227 37.4444 36.38 37.4444 33.8958V27.6667M28.3333 7.66667L14.6667 21V27.6667H21.5L35.1667 14.3333M28.3333 7.66667L35.1667 1L42 7.66667L35.1667 14.3333M28.3333 7.66667L35.1667 14.3333" stroke="white" stroke-opacity="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <svg width="43" height="42" viewBox="0 0 43 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 7.66667H42M31.75 7.66667L31.0566 5.86238C30.3844 4.11389 30.0482 3.23964 29.425 2.59329C28.8746 2.02251 28.1679 1.58071 27.3694 1.3084C26.4651 1 25.4027 1 23.2773 1H19.7227C17.5973 1 16.5349 1 15.6306 1.3084C14.8322 1.58071 14.1253 2.02251 13.5749 2.59329C12.9516 3.23964 12.6156 4.11389 11.9435 5.86238L11.25 7.66667M36.875 7.66667V30.3333C36.875 34.0671 36.875 35.9338 36.0371 37.36C35.3001 38.6144 34.1242 39.6342 32.6776 40.2733C31.033 41 28.8805 41 24.575 41H18.425C14.1196 41 11.9669 41 10.3225 40.2733C8.87595 39.6342 7.69991 38.6144 6.96289 37.36C6.125 35.9338 6.125 34.0671 6.125 30.3333V7.66667M26.625 16.5556V32.1111M16.375 16.5556V32.1111" stroke="white" stroke-opacity="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                                
+                    </div>
+                </div>
+                <br>
+                <div class="setting_container">
+                    <div class="setting_box  ">
+     
+                        <input class="action_button" type="text" name="#" id="#" placeholder="CLOAK">
+                    </div>
+                    <div class="setting_box setting_mobile_box">
+                        
+                        <input class="action_button action_button _1" type="text" name="#" id="#" placeholder="/">
+                    </div>
+                    <div class="setting_box setting_mobile_box">
+                        
+                        <input class="action_button action_button_2" type="text" name="#" id="#" placeholder="PASS_CLOAK">
+                    </div>
+                    <div class="setting_box setting_mobile_box flex_mobile">
+                        <svg width="43" height="42" viewBox="0 0 43 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.6671 5.44444H8.28934C5.73798 5.44444 4.46136 5.44444 3.48688 5.92887C2.62968 6.35496 1.93327 7.03438 1.49653 7.87067C1 8.82138 1 10.0669 1 12.556V33.8893C1 36.3784 1 37.6224 1.49653 38.5731C1.93327 39.4093 2.62968 40.09 3.48688 40.516C4.4604 41 5.73548 41 8.28185 41H30.1626C32.7089 41 33.9822 41 34.9557 40.516C35.8129 40.09 36.5117 39.4087 36.9483 38.5724C37.4444 37.6227 37.4444 36.38 37.4444 33.8958V27.6667M28.3333 7.66667L14.6667 21V27.6667H21.5L35.1667 14.3333M28.3333 7.66667L35.1667 1L42 7.66667L35.1667 14.3333M28.3333 7.66667L35.1667 14.3333" stroke="white" stroke-opacity="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <svg width="43" height="42" viewBox="0 0 43 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 7.66667H42M31.75 7.66667L31.0566 5.86238C30.3844 4.11389 30.0482 3.23964 29.425 2.59329C28.8746 2.02251 28.1679 1.58071 27.3694 1.3084C26.4651 1 25.4027 1 23.2773 1H19.7227C17.5973 1 16.5349 1 15.6306 1.3084C14.8322 1.58071 14.1253 2.02251 13.5749 2.59329C12.9516 3.23964 12.6156 4.11389 11.9435 5.86238L11.25 7.66667M36.875 7.66667V30.3333C36.875 34.0671 36.875 35.9338 36.0371 37.36C35.3001 38.6144 34.1242 39.6342 32.6776 40.2733C31.033 41 28.8805 41 24.575 41H18.425C14.1196 41 11.9669 41 10.3225 40.2733C8.87595 39.6342 7.69991 38.6144 6.96289 37.36C6.125 35.9338 6.125 34.0671 6.125 30.3333V7.66667M26.625 16.5556V32.1111M16.375 16.5556V32.1111" stroke="white" stroke-opacity="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                                
+                    </div>
+                </div>
+                <br>
+                <div class="setting_container">
+                    <div class="setting_box  ">
+     
+                        <input class="action_button" type="text" name="#" id="#" placeholder="CLOAK">
+                    </div>
+                    <div class="setting_box setting_mobile_box">
+                        
+                        <input class="action_button action_button _1" type="text" name="#" id="#" placeholder="/">
+                    </div>
+                    <div class="setting_box setting_mobile_box">
+                        
+                        <input class="action_button action_button_2" type="text" name="#" id="#" placeholder="PASS_CLOAK">
+                    </div>
+                    <div class="setting_box setting_mobile_box flex_mobile">
+                        <svg width="43" height="42" viewBox="0 0 43 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.6671 5.44444H8.28934C5.73798 5.44444 4.46136 5.44444 3.48688 5.92887C2.62968 6.35496 1.93327 7.03438 1.49653 7.87067C1 8.82138 1 10.0669 1 12.556V33.8893C1 36.3784 1 37.6224 1.49653 38.5731C1.93327 39.4093 2.62968 40.09 3.48688 40.516C4.4604 41 5.73548 41 8.28185 41H30.1626C32.7089 41 33.9822 41 34.9557 40.516C35.8129 40.09 36.5117 39.4087 36.9483 38.5724C37.4444 37.6227 37.4444 36.38 37.4444 33.8958V27.6667M28.3333 7.66667L14.6667 21V27.6667H21.5L35.1667 14.3333M28.3333 7.66667L35.1667 1L42 7.66667L35.1667 14.3333M28.3333 7.66667L35.1667 14.3333" stroke="white" stroke-opacity="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <svg width="43" height="42" viewBox="0 0 43 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 7.66667H42M31.75 7.66667L31.0566 5.86238C30.3844 4.11389 30.0482 3.23964 29.425 2.59329C28.8746 2.02251 28.1679 1.58071 27.3694 1.3084C26.4651 1 25.4027 1 23.2773 1H19.7227C17.5973 1 16.5349 1 15.6306 1.3084C14.8322 1.58071 14.1253 2.02251 13.5749 2.59329C12.9516 3.23964 12.6156 4.11389 11.9435 5.86238L11.25 7.66667M36.875 7.66667V30.3333C36.875 34.0671 36.875 35.9338 36.0371 37.36C35.3001 38.6144 34.1242 39.6342 32.6776 40.2733C31.033 41 28.8805 41 24.575 41H18.425C14.1196 41 11.9669 41 10.3225 40.2733C8.87595 39.6342 7.69991 38.6144 6.96289 37.36C6.125 35.9338 6.125 34.0671 6.125 30.3333V7.66667M26.625 16.5556V32.1111M16.375 16.5556V32.1111" stroke="white" stroke-opacity="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                                
+                    </div>
+                </div>
+            </div>
+            </div>
+    </section>
+
+    <div class="upload_container">
+        <div class="upload_box" onclick="toggleUploadPopup()"></div>
+        <div class="upload_popup" id="uploadPopup">
+            <input type="file" accept="image/*">
+        </div>
+    </div>
+
+    <script>
+        function toggleUploadPopup() {
+            let popup = document.getElementById('uploadPopup');
+            popup.style.display = popup.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+
+    <br><br>
+    <div style="margin-bottom: 500px;"></div>
+
+
+
+    <script>
+        document.querySelectorAll(".custom-select").forEach(select => {
+        const selectBox = select.querySelector(".select-box");
+        const options = select.querySelector(".options");
+        const optionItems = select.querySelectorAll(".option");
+
+        selectBox.addEventListener("click", () => {
+            options.classList.toggle("cloak");
+        });
+
+        optionItems.forEach(option => {
+            option.addEventListener("click", () => {
+                selectBox.textContent = option.textContent;
+                options.classList.remove("cloak");
+            });
+        });
+
+        document.addEventListener("click", (e) => {
+            if (!select.contains(e.target)) {
+                options.classList.remove("cloak");
+            }
+        });
+    });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    const scrollContainers = document.querySelectorAll(".right_menu_wrapper");
+
+    scrollContainers.forEach(scrollContainer => {
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+
+        scrollContainer.addEventListener("mousedown", (e) => {
+            isDown = true;
+            startX = e.pageX - scrollContainer.offsetLeft;
+            scrollLeft = scrollContainer.scrollLeft;
+            scrollContainer.style.cursor = "grabbing";
+        });
+
+        scrollContainer.addEventListener("mouseleave", () => {
+            isDown = false;
+            scrollContainer.style.cursor = "grab";
+        });
+
+        scrollContainer.addEventListener("mouseup", () => {
+            isDown = false;
+            scrollContainer.style.cursor = "grab";
+        });
+
+        scrollContainer.addEventListener("mousemove", (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - scrollContainer.offsetLeft;
+            const walk = (x - startX) * 2;
+            scrollContainer.scrollLeft = scrollLeft - walk;
+        });
+
+        let touchStartX = 0;
+        let touchScrollLeft = 0;
+
+        scrollContainer.addEventListener("touchstart", (e) => {
+            touchStartX = e.touches[0].clientX;
+            touchScrollLeft = scrollContainer.scrollLeft;
+        });
+
+        scrollContainer.addEventListener("touchmove", (e) => {
+            const touchX = e.touches[0].clientX;
+            const moveX = touchX - touchStartX;
+            scrollContainer.scrollLeft = touchScrollLeft - moveX;
+        });
+    });
+});
+
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>
